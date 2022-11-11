@@ -21,7 +21,7 @@ Convert the entered numbers to Ordinal form(in words)<br>
 
 
 b) Code<br>
-   <?php<br>
+       <?php<br>
    function ConvertToWord($num) {<br>
     if (empty($num[0])) <br>
     {<br>
@@ -73,14 +73,16 @@ b) Code<br>
                 
                 $output = $temp . $output;<br>
                 $i+=3;<br>
-            } else if (isset($num[$i + 1])) {<br>
+            }<br>
+                else if (isset($num[$i + 1])) {<br>
                 $tempnum = $num[$i + 1].$num[$i];<br>
                 if ($tempnum < 20)<br>
                     $output = $num_single[$tempnum] . " " . $places[$i] . " " . $output;<br>
                 else <br>
                     $output = $num_double[$num[$i + 1]] . " " . $num_single[$num[$i]] . " " . $places[$i] . " " . $output;<br>
                 $i+=2;<br>
-            } else {<br>
+            }<br>
+                else {<br>
                 $output = $num_single[$num[$i]] . " " . $places[$i] . " " . $output;<br>
                 $i++;<br>
             }<br>
