@@ -67,7 +67,6 @@ b) Code<br>
                     $temp .= $num_single[$tempnum] . " " . $places[$i] . " ";<br>
                 else <br>
                     $temp .= $num_double[$num[$i + 1]] . " " . $num_single[$num[$i]] . " " . $places[$i] . " ";<br>
-                
                 $output = $temp . $output;<br>
                 $i+=3;<br>
             }<br>
