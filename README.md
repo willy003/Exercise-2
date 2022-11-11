@@ -31,7 +31,6 @@ b) Code<br>
      $num_single = array("zero","one", "two", "three", "four", "five", "six", "seven", "eight", " nine", " ten", "eleven", " twelve", " thirteen", " fourteen", "fifteen", " sixteen", " seventeen", " eighteen", " nineteen");<br>
      $num_double = array(""," ten", " twenty", " thirty", " forty", " fifty", " sixty", " seventy", " eighty", " ninety");<br>
      $places = array(2 => "hundred","thousand", 6 => "million", 9 => "billion", 12 => "trillion");<br>
-
      $num= array_reverse(str_split($num));<br>
   if ($num[0]== 0) {<br>
         if ($num[1] >= 2)<br>
@@ -48,13 +47,11 @@ b) Code<br>
         else<br>
             $output = $num_single[$num[0]]."th";<br>
     }<br>
-        
     if($num[0] == 0 || $num[1] == 1){<br>
         $i = 2;<br>
     } else {<br>
         $i = 1;<br>
     }<br>
-    
     while ($i < count($num)) {<br>
         if ($i == 1) {<br>
             $output = $num_double[$num[$i]] . " " . $output;<br>
